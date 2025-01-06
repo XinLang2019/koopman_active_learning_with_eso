@@ -22,11 +22,8 @@ this repository is the code of koopman active learning with ESO. The code includ
 As our result, we can see the performance of algorithm in franka robot. we designed 2 experiments in simulation, and 3 experiments in real robot.
 
 - at koopman learning stage, we can see the active learning trajectory and without active learning trajectory:
+![](https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning.png)
 
-<p float="center">
-  <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_1.png" width="35%" />
-  <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_2.png" width="50%" />
-</p>
 
 - In simulation, we done 2 experiments and the results illustrate the superiority of our algorithm.
 ![](https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/constant_disturbance.png)
