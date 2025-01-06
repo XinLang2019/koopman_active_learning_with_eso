@@ -1,0 +1,5 @@
+float64[14] joint_state
+float64[7] qr
+float64[7] error
+---
+float64[7] torque

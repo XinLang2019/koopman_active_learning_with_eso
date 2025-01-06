@@ -1,0 +1,9 @@
+# Goal definition
+float64[14] joint_state
+float64[280] xd
+---
+# Result definition
+float64[140] torque
+---
+# Feedback definition
+string status

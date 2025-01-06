@@ -1,0 +1,6 @@
+float64[14] joint_state
+float64[14] xd
+float64[196] A
+float64[98] B
+---
+float64[7] torque
