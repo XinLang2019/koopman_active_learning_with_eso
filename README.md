@@ -24,7 +24,7 @@ As our result, we can see the performance of algorithm in franka robot. we desig
 - at koopman learning stage, we can see the active learning trajectory and without active learning trajectory:
 
 <p float="left">
-  <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_1.png" width="45%" />
+  <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_1.png" width="35%" />
   <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_2.png" width="45%" />
 </p>
 
