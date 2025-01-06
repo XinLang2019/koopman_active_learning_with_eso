@@ -60,7 +60,9 @@ sudo dpkg -i libfranka*.deb
 git clone https://github.com/XinLang2019/koopman_active_learning.git
 ```
 
-`` cd koopman_active_learning `` 
+```sh
+shcd koopman_active_learning 
+```
 
 ```sh
 source /opt/ros/noetic/setup.sh
@@ -77,11 +79,29 @@ if this step have some error like `rosdep not install`, You just need to follow 
 
 ```sh
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DFranka_DIR:PATH=/path/to/libfranka/build  
-```
+``` 
+notice `/path/to/` is your `libfrank` path.
 
 ## Using code
+open one terminal launch franka simulation environment(gazebo)
+```sh
+roslaunch franka_gazebo panda.launch controller:=joint_effort_example_controller rviz:=true
+```
+next, you should run the algorithm node, if you want to run the `eso controller`,you should open other terminal:
+```sh
+rosrun koopman_active_learning koopman_lqr_eso_node
+```
+or if you want to run the experiment of gripping, you should run:
+```sh
+rosrun koopman_active_learning koopman_lqr_gripping_node
+```
 
+- Notice
+In ESO node `koopman_active_learning/src/koopman_lqr_eso.cpp`, you can change the paramter `method (lines 217)` as `false` or `true` to shift the `baseline` or `proposed`, and the paramter `traj_index (lines 218)` to change the task trajectories.
+
+when you change the code, you should run `catkin_make` to rebuild your code.
 
 ## BibTex Citation
+
 
 ## License
