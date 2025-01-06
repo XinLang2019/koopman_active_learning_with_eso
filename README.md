@@ -28,6 +28,10 @@ As our result, we can see the performance of algorithm in franka robot. we desig
   <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_2.png" width="50%" />
 </p>
 
+- In simulation, we done 2 experiments and the results illustrate the superiority of our algorithm.
+![](https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/constant_disturbance.png)
+![](https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_disturbance.png)
+
 ---
 
 ## Instrall
