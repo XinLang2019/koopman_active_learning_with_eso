@@ -21,26 +21,63 @@ this repository is the code of koopman active learning with ESO. The code includ
 
 As our result, we can see the performance of algorithm in franka robot. we designed 2 experiments in simulation, and 3 experiments in real robot.
 
-- at koopman learning stage, we can see the active learning trajectory and without active learning trajectory:
-<div style="text-align: center;">
-   <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning.png" width="600"/>
-</div>
-- In simulation, we done 2 experiments and the results illustrate the superiority of our algorithm.
-![](https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/constant_disturbance.png)
-![](https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_disturbance.png)
-
 ---
 
 ## Instrall
-### 前置要求
-- 操作系统：Windows/Linux/macOS
-- Python 版本：>= 3.8
+### system config
+- System：Ubuntu 20.04 + ROS-noetic
 
-### 安装步骤
-1. 克隆项目代码：
-   ```bash
-   git clone https://github.com/your_username/your_project.git
-   cd your_project
+### Step1: install libfrank
+
+install dependence
+```sh
+sudo apt install build-essential cmake git libpoco-dev libeigen3-dev
+```
+
+```sh
+git clone --recursive https://github.com/frankaemika/libfranka --branch 0.10.0 # only for FR3
+```
+
+```sh
+cd libfranka
+```
+
+```sh
+mkdir build 
+cd build 
+cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=OFF .. 
+cmake --build .
+```
+
+this order is `options`
+```sh
+cpack -G DEB
+sudo dpkg -i libfranka*.deb
+```
+
+### Step2: install this package
+```sh
+git clone https://github.com/XinLang2019/koopman_active_learning.git
+```
+
+`` cd koopman_active_learning `` 
+
+```sh
+source /opt/ros/noetic/setup.sh
+```
+
+```sh
+catkin_init_workspace src
+```
+
+```sh
+rosdep install --from-paths src --ignore-src --rosdistro noetic -y --skip-keys libfranka 
+```
+if this step have some error like `rosdep not install`, You just need to follow the prompts to install the corresponding package.Then `build it`
+
+```sh
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DFranka_DIR:PATH=/path/to/libfranka/build  
+```
 
 ## Using code
 
