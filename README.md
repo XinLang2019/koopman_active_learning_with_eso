@@ -96,7 +96,7 @@ or if you want to run the experiment of gripping, you should run:
 rosrun koopman_active_learning koopman_lqr_gripping_node
 ```
 
-- Notice
+### Notice 
 In ESO node `koopman_active_learning/src/koopman_lqr_eso.cpp`, you can change the paramter `method (lines 217)` as `false` or `true` to shift the `baseline` or `proposed`, and the paramter `traj_index (lines 218)` to change the task trajectories.
 
 when you change the code, you should run `catkin_make` to rebuild your code.
