@@ -7,9 +7,8 @@ A key challenge in data-driven robot control is enabling robots to autonomously 
 
 ---
 
-## 目录
+## Content
 - [Introduction](#Introduction)
-- [Performance](#Performance)
 - [Instrall](#Instrall)
 - [Using code](#Using)
 - [BibTex Citation](#BibTex)
@@ -18,18 +17,16 @@ A key challenge in data-driven robot control is enabling robots to autonomously 
 ---
 
 ## Introduction
-简要描述项目的背景、目标和用途。
+this repository is the code of koopman active learning with ESO. The code include the main stage of algorithm, such as `learning`, `lqr control` and `eso control`.
 
-> 示例：
-> 本项目是一个用于数据分析的工具，支持多种格式的文件解析与可视化。
+As our result, we can see the performance of algorithm in franka robot. we designed 2 experiments in simulation, and 3 experiments in real robot.
 
----
+- at koopman learning stage, we can see the active learning trajectory and without active learning trajectory:
 
-## 功能Performance特性
-- 简洁的界面和高效的操作。
-- 支持多种文件格式：JSON、CSV 等。
-- 可视化工具：折线图、柱状图、散点图。
-- 多平台支持：Windows、Linux、macOS。
+<p float="left">
+  <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_1.png" width="45%" />
+  <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/dynamic_learning_1.png" width="45%" />
+</p>
 
 ---
 
