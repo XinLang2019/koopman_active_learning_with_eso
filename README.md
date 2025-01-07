@@ -92,7 +92,7 @@ notice `/path/to/` is your `libfrank` path.
 roslaunch franka_gazebo panda.launch controller:=joint_effort_example_controller rviz:=true
 ```
 
-- you can run active learning `koopman_active_learning/src/koopman_learning.cpp`, by:
+- Secondly, you can run active learning `koopman_active_learning/src/koopman_learning.cpp` to learn a koopman policy, by:
 ```sh
 rosrun koopman_active_learning koopman_learning_node
 ```
