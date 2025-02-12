@@ -1,6 +1,6 @@
 # Koopman-based Robust Learning Control with Extended State Observer
 
-[Paper]() | video | project
+[Paper](https://ieeexplore.ieee.org/document/10842507) | video | project
 ---
 
 <img src="https://github.com/XinLang2019/koopman_active_learning/blob/master/doc/algorithm_frame.png" width="900"/>
@@ -116,7 +116,8 @@ The active learning part of code reference: https://github.com/i-abr/active-lear
 
 ## BibTex Citation
 
-```@ARTICLE{10842507,
+```sh
+@ARTICLE{10842507,
   author={Lyu, Shangke and Lang, Xin and Wang, Donglin},
   journal={IEEE Robotics and Automation Letters}, 
   title={Koopman-Based Robust Learning Control With Extended State Observer}, 
@@ -125,7 +126,8 @@ The active learning part of code reference: https://github.com/i-abr/active-lear
   number={3},
   pages={2303-2310},
   keywords={Robots;Active learning;Aerospace electronics;Data models;Training;Robot sensing systems;Nonlinear dynamical systems;Adaptation models;Accuracy;Uncertainty;Koopman operator;active learning;extended state observers;robot control},
-  doi={10.1109/LRA.2025.3530137}}```
+  doi={10.1109/LRA.2025.3530137}}
+```
 
 
 ## License
