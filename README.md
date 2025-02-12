@@ -116,7 +116,7 @@ The active learning part of code reference: https://github.com/i-abr/active-lear
 
 ## BibTex Citation
 
-`@ARTICLE{10842507,
+```@ARTICLE{10842507,
   author={Lyu, Shangke and Lang, Xin and Wang, Donglin},
   journal={IEEE Robotics and Automation Letters}, 
   title={Koopman-Based Robust Learning Control With Extended State Observer}, 
@@ -125,7 +125,7 @@ The active learning part of code reference: https://github.com/i-abr/active-lear
   number={3},
   pages={2303-2310},
   keywords={Robots;Active learning;Aerospace electronics;Data models;Training;Robot sensing systems;Nonlinear dynamical systems;Adaptation models;Accuracy;Uncertainty;Koopman operator;active learning;extended state observers;robot control},
-  doi={10.1109/LRA.2025.3530137}}`
+  doi={10.1109/LRA.2025.3530137}}```
 
 
 ## License
